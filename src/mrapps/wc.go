@@ -16,7 +16,6 @@ import "strconv"
 // 第一个参数是输入文件名，第二个参数是文件的完整内容
 // 应该重点关注内容参数，忽略输入文件名
 // 函数的返回值是key/value对的切片
-*/
 func Map(filename string, contents string) []mr.KeyValue {
 	// 检测单词分隔符.
 	ff := func(r rune) bool { return !unicode.IsLetter(r) }
